@@ -53,5 +53,5 @@ vnoremap > >gv
 "vnoremap <silent> y y:call ClipboardYark()<cr>
 "vnoremap <silent> d d:call ClipboardYark()<cr>
 "vnoremap <silent> p :call ClipboardPase()<cr>p
-set clipboard+=unnamedplus
+set clipboard+=unnamedplus " Copy/pass clipboard
 
