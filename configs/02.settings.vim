@@ -6,6 +6,9 @@ let g:python3_host_prog = expand('/usr/bin/python3.6')
 
 filetype plugin on
 filetype plugin indent on " Thụt lề
+" Tự động indent
+set autoindent
+set si " smart indent
 
 "Auto remove trailing spaces
 autocmd BufWritePre * %s/\s\+$//e
@@ -16,7 +19,11 @@ autocmd BufEnter * :set scroll=10
 syntax on
 
 set encoding=UTF-8
-set mouse=a	" Enable mouse trong context của neovim
+
+" Enable mouse trong context của neovim
+if has('mouse')
+  set mouse=a
+endif
 
 set incsearch
 set hlsearch 	" Hight light text khi search
@@ -33,6 +40,10 @@ set ignorecase " Ignore case in search patterns.
 set smartcase 	" Override the 'ignorecase' option if the search pattern contains uppercase characters
 set nobackup    " Make a nobackup before overwriting a file
 set noswapfile  " no use a swapfile for the buffer
+
+" tự động cập nhật khi file thay đổi (Bởi chương trình khác)
+set autoread
+set autowrite
 
 " keyword: zs, ze, zh, zl
 set nowrap      " This option can change how text displayed. Đoạn text trên 1 dòng bị tràn không xuống dòng
@@ -68,7 +79,8 @@ vmap D y'>p
 vnoremap < <gv
 vnoremap > >gv
 
-set clipboard+=unnamedplus " Copy/pass clipboard
+"set clipboard+=unnamedplus " Copy/pass clipboard
+set clipboard=unnamedplus
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
 "ctrslf
@@ -76,3 +88,16 @@ nmap <leader>s <Plug>CtrlSFPrompt
 vmap <leader>sw <Plug>CtrlSFVwordPath
 "terminal mapping
 tnoremap <Esc> <C-\><C-n>
+
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+set whichwrap+=<,>,h,l
+
+" Setting phím Tab để cách dòng
+nnoremap <S-Tab> <<
+nnoremap <Tab> >>
+inoremap <S-Tab> <C-d>
+
+" Nhấn phím Tab để mở gợi ý
+inoremap <silent><expr><Tab> pumvisible() ? "\<C-N>" : "\<Tab>"
+inoremap <silent><expr><S-Tab> pumvisible() ? "\<C-P>" : "\<S-Tab>"

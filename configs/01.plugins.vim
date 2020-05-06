@@ -5,19 +5,14 @@ Plug 'vim-airline/vim-airline' " Show line footer
 Plug 'vim-airline/vim-airline-themes' " theme of vim-airline
 Plug 'jiangmiao/auto-pairs' " Tạo tag đóng tự động: { => {}
 Plug 'airblade/vim-gitgutter' 	" Hiển thị trạng thái thay đổi git theo từng dòng
-Plug 'kien/ctrlp.vim' " Tìm kiếm file trên trong project hiện tại
 Plug 'tpope/vim-surround' " Tạo , sửa , xóa khý tự bao ngoài của một cụm text <div></div>
 Plug 'easymotion/vim-easymotion'	" Di chuyển nhanh tới vị trí tìm kiếm
 Plug 'junegunn/vim-easy-align' " Căn vị trí ký tự = thẳng hàng
 Plug 'alvan/vim-closetag' " Đóng tạo <Tag> nhanh
 Plug 'terryma/vim-multiple-cursors' " Dùng nhiều con trỏ
 
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'} " Xuất hiện gợi ý
-"typescript
-Plug 'ianks/vim-tsx'
-Plug 'herringtondarkholme/yats.vim'
-
 " Setting test
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'} " Xuất hiện gợi ý
 Plug 'Shougo/neoinclude.vim'
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
@@ -35,8 +30,8 @@ Plug 'galooshi/vim-import-js'
 Plug 'Shougo/denite.nvim'
 "snippets
 "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Dùng coc.vim
-"Plug 'honza/vim-snippets'
-"Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'SirVer/ultisnips'
 "fzf
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'dyng/ctrlsf.vim'
@@ -45,6 +40,8 @@ Plug 'dyng/ctrlsf.vim'
 Plug 'ianks/vim-tsx'
 Plug 'herringtondarkholme/yats.vim'
 
+" search file name
+Plug 'kien/ctrlp.vim' " Tìm kiếm file trên trong project hiện tại
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Tim kiem file
 Plug 'benmills/vimux'
 
