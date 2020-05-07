@@ -12,7 +12,7 @@ Plug 'alvan/vim-closetag' " Đóng tạo <Tag> nhanh
 Plug 'terryma/vim-multiple-cursors' " Dùng nhiều con trỏ
 
 " Setting test
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'} " Xuất hiện gợi ý
+Plug 'neoclide/coc.nvim', {'branch': 'release'} " gợi ý code
 Plug 'Shougo/neoinclude.vim'
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',

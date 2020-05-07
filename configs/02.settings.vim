@@ -3,7 +3,6 @@ let mapleader = "\<Space>" " Prefix key dung để trigger các function hay eve
 
 let g:python_host_prog = expand('/usr/bin/python2.7')
 let g:python3_host_prog = expand('/usr/bin/python3.6')
-
 filetype plugin on
 filetype plugin indent on " Thụt lề
 " Tự động indent
@@ -26,13 +25,19 @@ if has('mouse')
 endif
 
 set incsearch
-set hlsearch 	" Hight light text khi search
+set hlsearch " Hight light text khi search
 
-set tabstop=2	" Space mỗi lần tab
+set tabstop=2 " Space mỗi lần tab
 set softtabstop=0
 set shiftwidth=2
 set expandtab   " Use the appropriate number of spaces insert a Tab
 set lazyredraw  " The screen will not be redrawn while executin macros
+
+" Ký tự thụt lề
+"set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:·
+set listchars=trail:~,space:·
+set list
+set expandtab
 
 set number   " show line
 set relativenumber " hiển thị vị trí các dòng so với dòng hiện tại
