@@ -58,4 +58,5 @@ Plug 'othree/html5.vim'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'ap/vim-css-color'
 
+Plug 'mileszs/ack.vim' " Tìm kiếm text trên nhiều file
 call plug#end()
