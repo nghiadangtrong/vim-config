@@ -12,6 +12,12 @@ let g:NERDTreeChDirMode = 2
 let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.db', '\.sqlite$', '__pycache__', 'node_modules', '.git']
 let g:NERDTreeShowBookmarks=2
 
+" NERDComment :
+"  - left (comment thường) : [count]<leader>c<leader>
+"  - leftAlt && rightAlt (Sexy comment): [count]<leader>ci
+let g:NERDCustomDelimiters={
+  \ 'javascript': { 'left': '//', 'right': '', 'leftAlt': '{/*', 'rightAlt': '*/}' },
+\}
 " Theme
 syntax enable
 set background=dark
