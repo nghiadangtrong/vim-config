@@ -77,6 +77,10 @@ noremap <silent> <C-j> :wincmd j<CR>
 noremap <silent> <C-k> :wincmd k<CR>
 noremap <silent> <C-l> :wincmd l<CR>
 
+noremap <silent> <leader>= :vertical resize +5<CR>
+noremap <silent> <leader>- :vertical resize -5<CR>
+noremap <silent> <leader>+ :resize +5<CR>
+noremap <silent> <leader>_ :resize -5<CR>
 " Duplicate everything selected
 vmap D y'>p
 
