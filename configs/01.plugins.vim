@@ -29,7 +29,6 @@ Plug 'w0rp/ale'
 Plug 'galooshi/vim-import-js'
 Plug 'Shougo/denite.nvim'
 "snippets
-"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Dùng coc.vim
 Plug 'honza/vim-snippets'
 Plug 'SirVer/ultisnips'
 "fzf

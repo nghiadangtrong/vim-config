@@ -39,6 +39,15 @@ let g:EasyMotion_smartcase = 1
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
+" Prettier
+"let g:prettier#autoformat = 1
+"let g:prettier#config#print_width = 80
+let g:prettier#config#trailing_comma = 'es5'
+"let g:prettier#config#jsx_bracket_same_line = 'true'
+"let g:prettier#config#jsxSingleQuote = 'true'
+"let g:prettier#config#bracket_spacing = 'true'
+"let g:prettier#config#arrow_parens = 'always'
+
 " AUTO CLOSE TAGS
 let g:closetag_filenames = '*.html,*.jsx,*.tsx,*.js,*.vue'
 let g:closetag_xhtml_filenames = '*.xhtml,*.jsx,*.js,*.vue'
@@ -99,7 +108,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-h>"
 let g:EasyMotion_smartcase = 1
 
 "====== COC-NVIM ======
-let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-json']
+"let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-json']
 set updatetime=300
 set shortmess+=c
 set signcolumn=yes
