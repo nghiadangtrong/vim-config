@@ -1,5 +1,3 @@
 {
-  "tsserver.enableJavascript": false,
-  "typescript.showUnused": true,
-  "javascript.showUnused": true
+  "tsserver.enableJavascript": false
 }

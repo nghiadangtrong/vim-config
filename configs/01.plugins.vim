@@ -12,7 +12,8 @@ Plug 'alvan/vim-closetag' " Đóng tạo <Tag> nhanh
 Plug 'terryma/vim-multiple-cursors' " Dùng nhiều con trỏ
 
 " Setting test
-Plug 'neoclide/coc.nvim', {'branch': 'release'} " gợi ý code
+"Plug 'neoclide/coc.nvim', {'branch': 'release'} " gợi ý code
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'Shougo/neoinclude.vim'
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
@@ -51,11 +52,11 @@ Plug 'tpope/vim-fugitive'
 Plug 'editorconfig/editorconfig-vim'
 
 " Language support things
-Plug 'sheerun/vim-polyglot'
-Plug 'rust-lang/rust.vim'
-Plug 'othree/html5.vim'
-Plug 'cakebaker/scss-syntax.vim'
-Plug 'ap/vim-css-color'
+"Plug 'sheerun/vim-polyglot'
+"Plug 'rust-lang/rust.vim'
+"Plug 'othree/html5.vim'
+"Plug 'cakebaker/scss-syntax.vim'
+"Plug 'ap/vim-css-color'
 
 Plug 'mileszs/ack.vim' " Tìm kiếm text trên nhiều file
 call plug#end()

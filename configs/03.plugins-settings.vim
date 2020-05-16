@@ -7,7 +7,6 @@ let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let NERDTreeShowHidden = 1
 let g:NERDDefaultAlign = 'left'
-let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
 let g:NERDTreeChDirMode = 2
 let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.db', '\.sqlite$', '__pycache__', 'node_modules', '.git']
 let g:NERDTreeShowBookmarks=2
@@ -16,8 +15,13 @@ let g:NERDTreeShowBookmarks=2
 "  - left (comment thường) : [count]<leader>c<leader>
 "  - leftAlt && rightAlt (Sexy comment): [count]<leader>ci
 let g:NERDCustomDelimiters={
+  \ 'c': { 'left': '/**','right': '*/' },
   \ 'javascript': { 'left': '//', 'right': '', 'leftAlt': '{/*', 'rightAlt': '*/}' },
 \}
+
+"typescript
+let g:typescript_indent_disable = 1
+
 " Theme
 syntax enable
 set background=dark
@@ -42,7 +46,7 @@ nmap ga <Plug>(EasyAlign)
 " Prettier
 "let g:prettier#autoformat = 1
 "let g:prettier#config#print_width = 80
-let g:prettier#config#trailing_comma = 'es5'
+"let g:prettier#config#trailing_comma = 'es5'
 "let g:prettier#config#jsx_bracket_same_line = 'true'
 "let g:prettier#config#jsxSingleQuote = 'true'
 "let g:prettier#config#bracket_spacing = 'true'
@@ -76,6 +80,11 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 
+"Emmet
+let g:user_emmet_leader_key='<C-Z>'
+let g:jsx_ext_required = 1
+let g:jsx_pragma_required = 1
+
 "ALE
 let g:ale_sign_error = '>>'
 let g:ale_sign_warning = '--'
@@ -92,7 +101,7 @@ let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
 
 "DEOPLETE
-"let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_at_startup = 1
 
 " vim-javascript
 let g:javascript_plugin_jsdoc = 1
@@ -107,11 +116,6 @@ let g:UltiSnipsJumpBackwardTrigger="<c-h>"
 " Easymotion
 let g:EasyMotion_smartcase = 1
 
-"====== COC-NVIM ======
-"let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-json']
-set updatetime=300
-set shortmess+=c
-set signcolumn=yes
 
 "leaderF
 let g:Lf_ShortcutF = '<C-P>'

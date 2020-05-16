@@ -1,3 +1,7 @@
+let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-json']
+set updatetime=300
+set shortmess+=c
+set signcolumn=yes
 
 inoremap <silent><expr> <c-space> coc#refresh()
 
