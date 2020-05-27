@@ -109,3 +109,7 @@ set si " smart indent
 
 "Auto remove trailing spaces
 autocmd BufWritePre * %s/\s\+$//e
+
+nnoremap d "_d
+xnoremap d "_d
+xnoremap p "_dP
