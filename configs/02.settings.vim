@@ -54,7 +54,7 @@ set noerrorbells " No Ring the bell for error message
 "imap: Map keyboard on Insert Mode
 inoremap jj <ESC>
 inoremap ww <ESC>:w<cr>
-"inoremap <silent> <c-l> <ESC>la
+inoremap <silent> <c-l> <ESC>la
 " Nhấn phím Tab để mở gợi ý
 inoremap <silent><expr><Tab> pumvisible() ? "\<C-N>" : "\<Tab>"
 inoremap <silent><expr><S-Tab> pumvisible() ? "\<C-P>" : "\<S-Tab>"
@@ -87,7 +87,7 @@ nmap <leader>rn <Plug>(coc-rename)
 vmap D y'>p
 
 " copy/pase
-set clipboard=unnamedplus
+set clipboard+=unnamedplus
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
 "ctrslf
@@ -95,8 +95,8 @@ nmap <leader>s <Plug>CtrlSFPrompt
 vmap <leader>sw <Plug>CtrlSFVwordPath
 
 " allow backspacing over everything in insert mode
-set backspace=indent,eol,start
-set whichwrap+=<,>,h,l
+"set backspace=indent,eol,start
+"set whichwrap+=<,>,h,l
 
 " Setting phím Tab để cách dòng
 nnoremap <S-Tab> <<
