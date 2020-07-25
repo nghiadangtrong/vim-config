@@ -9,7 +9,7 @@ let NERDTreeShowHidden = 1
 let g:NERDDefaultAlign = 'left'
 let g:NERDTreeChDirMode = 2
 "let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.db', '\.sqlite$', '__pycache__', 'node_modules', '.git']
-let g:NERDTreeIgnore=['__pycache__', 'node_modules', '.git']
+"let g:NERDTreeIgnore=['__pycache__', 'node_modules']
 let g:NERDTreeShowBookmarks=2
 
 " NERDComment :
@@ -123,7 +123,7 @@ let g:EasyMotion_smartcase = 1
 
 "====== COC-NVIM ======
 "let g:coc_global_extensions = ['coc-eslint', 'coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-json']
-let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-json']
+"let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-json']
 set updatetime=300
 set shortmess+=c
 set signcolumn=yes
@@ -135,7 +135,7 @@ function! s:show_documentation()
     xecute 'h '.expand('<cword>')
   else
     call CocAction('doHover')
-  ndif
+  endif
 endfunction
 "===== end of Coc-nvim======
 
