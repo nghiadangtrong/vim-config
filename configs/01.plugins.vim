@@ -22,6 +22,7 @@ Plug 'dyng/ctrlsf.vim'
 Plug 'ianks/vim-tsx'
 Plug 'herringtondarkholme/yats.vim'
 Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 
 Plug 'airblade/vim-gitgutter' 	" Hiển thị trạng thái thay đổi git theo từng dòng
 Plug 'junegunn/vim-easy-align' " Căn vị trí ký tự = thẳng hàng

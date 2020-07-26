@@ -5,6 +5,7 @@ set signcolumn=yes
 
 inoremap <silent><expr> <c-space> coc#refresh()
 
+autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
 "autocmd BufNewFile,BufRead *.tsx set filetype=typescript.tsx
 
 " Use K to show documentation in preview window.
