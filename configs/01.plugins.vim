@@ -61,6 +61,8 @@ Plug 'nikvdp/ejs-syntax'
 "Plug 'othree/html5.vim'
 "Plug 'cakebaker/scss-syntax.vim'
 "Plug 'ap/vim-css-color'
+Plug 'joukevandermaas/vim-ember-hbs'    "
 
 Plug 'mileszs/ack.vim' " Tìm kiếm text trên nhiều file
+Plug 'ekalinin/dockerfile.vim'
 call plug#end()
