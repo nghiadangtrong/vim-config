@@ -2,7 +2,7 @@
 let mapleader = "\<Space>" " Prefix key dung để trigger các function hay event
 
 let g:python_host_prog = expand('/usr/bin/python2.7')
-let g:python3_host_prog = expand('/usr/bin/python3.6')
+let g:python3_host_prog = expand('/usr/bin/python3.8')
 
 filetype plugin on
 filetype plugin indent on " Thụt lề
