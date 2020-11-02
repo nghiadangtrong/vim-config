@@ -1,0 +1,81 @@
+{
+    "vscode-neovim.highlightGroups.highlights": {
+        "Directory": "vim",
+        "IncSearch": {
+            "backgroundColor": "theme.editor.findMatchBackground",
+            "borderColor": "theme.editor.findMatchBorder"
+        },
+        "Search": {
+            "backgroundColor": "theme.editor.findMatchHighlightBackground",
+            "borderColor": "theme.editor.findMatchHighlightBorder"
+        },
+        "Visual": {
+            "backgroundColor": "theme.editor.selectionBackground"
+        },
+        "Conceal": "vim",
+        "Substitute": "vim"
+    },
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    "vim.debug.silent": true,
+    "vim.debug.loggingLevelForAlert": "debug",
+    "vim.debug.loggingLevelForConsole": "debug",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["w", "w"],
+            "after": ["<Esc>"],
+            "commands": [":w"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<Esc>", "<Esc>"],
+            "commands": [":nohl"]
+        },
+        {
+            "before": ["f", "f"],
+            "after": ["<leader>", "<leader>", "2", "s"]
+        },
+        {
+            "before": ["<leader>", "c", "c"],
+            "after": ["g", "c", "c"]
+        },
+        {
+            "before": ["<C-k>"],
+            "after": ["C-w", "k"]
+        },
+        {
+            "before": ["<C-j>"],
+            "after": ["C-w", "j"]
+        },
+        {
+            "before": ["<C-h>"],
+            "after": ["C-w", "h"]
+        },
+        {
+            "before": ["<C-l>"],
+            "after": ["C-w", "l"]
+        },
+        {
+            "before": ["<C-n>"],
+            "commands": [":tabnext"]
+        },
+        {
+            "before": ["<C-b>"],
+            "commands": [":tabprevious"]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "c"],
+            "after": ["g", "c"]
+        }
+    ]
+}
