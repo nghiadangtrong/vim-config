@@ -81,7 +81,7 @@ noremap <silent> <leader>_ :resize -5<CR>
 " nmap
 nmap <silent> ff <Plug>(easymotion-overwin-f2)
 nmap <silent> fl <Plug>(easymotion-overwin-line)
-nmap <leader>rn <Plug>(coc-rename)
+nmap <leader> rn <Plug>(coc-rename)
 
 " Duplicate everything selected
 vmap D y'>p

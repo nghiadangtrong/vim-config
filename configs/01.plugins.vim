@@ -65,4 +65,5 @@ Plug 'joukevandermaas/vim-ember-hbs'    "
 
 Plug 'mileszs/ack.vim' " Tìm kiếm text trên nhiều file
 Plug 'ekalinin/dockerfile.vim'
+Plug 'mattn/emmet-vim'
 call plug#end()

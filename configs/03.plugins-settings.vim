@@ -147,3 +147,8 @@ if executable('ag')
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 endif
+
+" kite
+"let g:kite_supported_languages = ['python', 'javascript', 'go']
+
+" emmet <c-y>, => <ctrl-y>,
