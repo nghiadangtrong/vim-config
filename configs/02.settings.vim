@@ -110,6 +110,8 @@ set si " smart indent
 "Auto remove trailing spaces
 autocmd BufWritePre * %s/\s\+$//e
 
+" Fix copy - paste text
+"   Khi paste text giá trị copy bị mất
 nnoremap d "_d
 xnoremap d "_d
 xnoremap p "_dP
